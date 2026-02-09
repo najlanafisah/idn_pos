@@ -92,7 +92,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
           Navigator.pop(paymentContext);
           Navigator.pop(context);
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('"Pembayaran Berhasil'), backgroundColor: Colors.green,)
+            SnackBar(content: Text('Pembayaran Berhasil'), backgroundColor: Colors.green,)
           );
         },
         onCancel: () {

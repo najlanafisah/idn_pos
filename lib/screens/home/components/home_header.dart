@@ -59,7 +59,7 @@ class HomeHeader extends StatelessWidget {
           SizedBox(height: 5),
           Text('Kelola & bayar dengan mudah',
             style: TextStyle(
-              fontSize: 40,
+              fontSize: 14,
               color: Colors.white70
             ),
           )

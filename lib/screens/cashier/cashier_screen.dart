@@ -127,9 +127,9 @@ class _CashierScreenState extends State<CashierScreen> {
     if (_selectedDevice != null && await bluetooth.isConnected == true) {
       // header struk
       bluetooth.printNewLine(); // unutk ngasih enter
-      bluetooth.printCustom("AR STORE", 3, 1); // judul besar (center)
+      bluetooth.printCustom("IDN CAFE", 3, 1); // judul besar (center)
       bluetooth.printNewLine();
-      bluetooth.printCustom("Jl. Raya Sempu", 1, 1);
+      bluetooth.printCustom("Jl. Bagus Dayeuh", 1, 1);
 
       // tanggal & id
       bluetooth.printNewLine();
@@ -148,7 +148,7 @@ class _CashierScreenState extends State<CashierScreen> {
       bluetooth.printLeftRight("TOTAL", formatRupiah(total), 3);
       bluetooth.printNewLine();
       bluetooth.printCustom("Scan QR Dibawah:", 1, 1);
-      bluetooth.printQRcode(qrData, 300, 500, 1); // ini nanti ganti jadi kotak ya
+      bluetooth.printQRcode(qrData, 300, 300, 1); // ini nanti ganti jadi kotak ya
       bluetooth.printNewLine();
       bluetooth.printCustom("Makasi", 1, 1);
       bluetooth.printNewLine();
@@ -210,8 +210,8 @@ class _CashierScreenState extends State<CashierScreen> {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, // ini biar jumlah grid kesampingnya 2 
                 childAspectRatio: 0.8,
-                crossAxisSpacing: 15,
-                mainAxisExtent: 15
+                crossAxisSpacing: 15, 
+                mainAxisSpacing: 15
               ),
               itemCount: menus.length, // biar ngambil keseluruhan datanya
               itemBuilder: (context, index) {
